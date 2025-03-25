@@ -11,4 +11,7 @@ components
 -product
 -cart
 -productDetail
+-header
+-footer
+-navbar
 
