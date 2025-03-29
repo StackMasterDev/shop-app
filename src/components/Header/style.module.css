@@ -1,0 +1,133 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    /* Padding artırıldı */
+    background-color: white;
+    border-bottom: 2px solid #e0e0e0;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    /* Cyber logosu 30px sağa kaydırıldı */
+}
+
+/* Arama kutusu stili */
+.searchBox {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Arama inputu stili */
+.searchInput {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+    border-color: #4a90e2;
+    /* Focus rengini değiştirdik */
+}
+
+/* Arama sonuçları liste stili */
+.searchResults {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Arama sonucu öğesi */
+.searchItem {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.searchItem:hover {
+    background-color: #f0f0f0;
+}
+
+.searchItem img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.searchItem span {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Eğer ürün listesi boşsa, kullanıcıya bir mesaj gösterebilirsiniz */
+.searchResults.empty {
+    padding: 10px;
+    text-align: center;
+    color: #888;
+}
+
+
+/* Menü */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -50px;
+    /* Menü (Home, About vb.) 50px sola kaydırıldı */
+}
+
+.menuItem {
+    margin: 0 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: #888;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.link:hover,
+.link:focus {
+    color: black;
+}
+
+/* İkonlar */
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-right: 40px;
+    /* İkonlar 20px sola kaydırıldı */
+}
+
+.icons img {
+    cursor: pointer;
+}
